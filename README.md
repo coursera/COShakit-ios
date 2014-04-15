@@ -1,2 +1,2 @@
-rageshake-ios
+COShaKit-ios
 =============
