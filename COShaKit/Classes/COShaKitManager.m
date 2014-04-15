@@ -28,6 +28,7 @@
     self = [super init];
     if (self) {
         _shouldIncludeScreenshot = YES;
+        _isShaKitEnabled = YES;
     }
     return self;
 }
@@ -51,7 +52,7 @@
     alertView.message = self.alertMessage ? self.alertMessage:@"Do you want to send feedback?";
     [alertView addButtonWithTitle:@"Cancel"];
     [alertView addButtonWithTitle:@"Yes"];
-    [alertView show];
+    if (self.isShaKitEnabled) [alertView show];
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {

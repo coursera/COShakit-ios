@@ -12,6 +12,7 @@
 
 @interface COShaKitManager : NSObject <MFMailComposeViewControllerDelegate, UIAlertViewDelegate>
 @property (nonatomic, weak) id <COShaKitDelegate> delegate;
+@property (nonatomic, assign) BOOL isShaKitEnabled;
 @property (nonatomic, assign) BOOL shouldIncludeScreenshot;
 @property (nonatomic, strong) NSArray *toRecipients;
 @property (nonatomic, strong) NSArray *ccRecipients;
