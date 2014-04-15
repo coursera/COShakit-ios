@@ -19,6 +19,10 @@
 		9B1235D818FCC919006A3378 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1235C018FCC919006A3378 /* UIKit.framework */; };
 		9B1235E018FCC919006A3378 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B1235DE18FCC919006A3378 /* InfoPlist.strings */; };
 		9B1235E218FCC919006A3378 /* COShaKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1235E118FCC919006A3378 /* COShaKitTests.m */; };
+		9B1235EF18FCC982006A3378 /* COShaKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1235EC18FCC982006A3378 /* COShaKitManager.m */; };
+		9B1235F018FCC982006A3378 /* UIWindow+COShaKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1235EE18FCC982006A3378 /* UIWindow+COShaKit.m */; };
+		9B1235F418FCCA08006A3378 /* COExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1235F218FCCA08006A3378 /* COExampleViewController.m */; };
+		9B1235F518FCCA08006A3378 /* COExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B1235F318FCCA08006A3378 /* COExampleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		9B1235DD18FCC919006A3378 /* COShaKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "COShaKitTests-Info.plist"; sourceTree = "<group>"; };
 		9B1235DF18FCC919006A3378 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B1235E118FCC919006A3378 /* COShaKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COShaKitTests.m; sourceTree = "<group>"; };
+		9B1235EB18FCC982006A3378 /* COShaKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = COShaKitManager.h; path = Classes/COShaKitManager.h; sourceTree = "<group>"; };
+		9B1235EC18FCC982006A3378 /* COShaKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = COShaKitManager.m; path = Classes/COShaKitManager.m; sourceTree = "<group>"; };
+		9B1235ED18FCC982006A3378 /* UIWindow+COShaKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWindow+COShaKit.h"; path = "Classes/UIWindow+COShaKit.h"; sourceTree = "<group>"; };
+		9B1235EE18FCC982006A3378 /* UIWindow+COShaKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWindow+COShaKit.m"; path = "Classes/UIWindow+COShaKit.m"; sourceTree = "<group>"; };
+		9B1235F118FCCA08006A3378 /* COExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COExampleViewController.h; sourceTree = "<group>"; };
+		9B1235F218FCCA08006A3378 /* COExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COExampleViewController.m; sourceTree = "<group>"; };
+		9B1235F318FCCA08006A3378 /* COExampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COExampleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +118,15 @@
 		9B1235C218FCC919006A3378 /* COShaKit */ = {
 			isa = PBXGroup;
 			children = (
+				9B1235EB18FCC982006A3378 /* COShaKitManager.h */,
+				9B1235EC18FCC982006A3378 /* COShaKitManager.m */,
+				9B1235ED18FCC982006A3378 /* UIWindow+COShaKit.h */,
+				9B1235EE18FCC982006A3378 /* UIWindow+COShaKit.m */,
 				9B1235CB18FCC919006A3378 /* COAppDelegate.h */,
 				9B1235CC18FCC919006A3378 /* COAppDelegate.m */,
-				9B1235CE18FCC919006A3378 /* Images.xcassets */,
+				9B1235F118FCCA08006A3378 /* COExampleViewController.h */,
+				9B1235F218FCCA08006A3378 /* COExampleViewController.m */,
+				9B1235F318FCCA08006A3378 /* COExampleViewController.xib */,
 				9B1235C318FCC919006A3378 /* Supporting Files */,
 			);
 			path = COShaKit;
@@ -118,6 +135,7 @@
 		9B1235C318FCC919006A3378 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9B1235CE18FCC919006A3378 /* Images.xcassets */,
 				9B1235C418FCC919006A3378 /* COShaKit-Info.plist */,
 				9B1235C518FCC919006A3378 /* InfoPlist.strings */,
 				9B1235C818FCC919006A3378 /* main.m */,
@@ -222,6 +240,7 @@
 			files = (
 				9B1235C718FCC919006A3378 /* InfoPlist.strings in Resources */,
 				9B1235CF18FCC919006A3378 /* Images.xcassets in Resources */,
+				9B1235F518FCCA08006A3378 /* COExampleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B1235CD18FCC919006A3378 /* COAppDelegate.m in Sources */,
+				9B1235F018FCC982006A3378 /* UIWindow+COShaKit.m in Sources */,
+				9B1235F418FCCA08006A3378 /* COExampleViewController.m in Sources */,
+				9B1235EF18FCC982006A3378 /* COShaKitManager.m in Sources */,
 				9B1235C918FCC919006A3378 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

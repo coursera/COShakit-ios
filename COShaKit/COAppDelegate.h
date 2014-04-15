@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "COShaKitManager.h"
 
-@interface COAppDelegate : UIResponder <UIApplicationDelegate>
+@interface COAppDelegate : UIResponder <UIApplicationDelegate, COShaKitDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
