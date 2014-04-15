@@ -47,8 +47,8 @@
     UIAlertView *alertView = [[UIAlertView alloc] init];
     alertView.delegate = self;
     
-    alertView.title = self.alertTitle ? self.alertTitle:@"Is everything Ok?";
-    alertView.message = self.alertMessage ? self.alertMessage:@"Seems like you are shaking your device, do you want to send a feedback?";
+    alertView.title = self.alertTitle ? self.alertTitle:@"Seems like you are shaking your device.";
+    alertView.message = self.alertMessage ? self.alertMessage:@"Do you want to send feedback?";
     [alertView addButtonWithTitle:@"Cancel"];
     [alertView addButtonWithTitle:@"Yes"];
     [alertView show];
